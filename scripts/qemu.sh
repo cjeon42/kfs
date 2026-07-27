@@ -13,7 +13,7 @@ HDD="$1"
 shift
 
 if [ "$HDD" != "-" ]; then
-    HDD_CMD="-drive file=$HDD,if=none,format=qcow2,id=hdd -device ide-hd,drive=hdd,bus=ide.0,unit=0"
+    HDD_CMD="-drive file=$HDD,if=none,format=raw,id=hdd -device ide-hd,drive=hdd,bus=ide.0,unit=0"
 fi
 
 COM1="$1"

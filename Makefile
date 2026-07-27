@@ -56,7 +56,7 @@ clean :
 re : clean
 	@$(MAKE) all
 
-run : all
+run : 
 	@scripts/qemu.sh $(RESCUE_IMG) $(HDD_IMG) stdio -monitor pty
 
 # === Target recipes ===
